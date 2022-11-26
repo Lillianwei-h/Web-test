@@ -34,7 +34,7 @@ header .logo a{
     position: relative;
     height:30px;
     width:30px;
-    background-position-y:10px;
+    background-position-y:30px;
 }
 header.sub .logo a{
     background-image: url("../sakura.png");
@@ -44,7 +44,7 @@ header.sub .logo a{
     position: relative;
     height:30px;
     width:30px;
-    background-position-y:10px;
+    background-position-y:30px;
 }
 header h3{
     font-size: 30px;
