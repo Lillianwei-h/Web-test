@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 20px 0 0 -40px;
+        }
+        li{
+            background-color: rgb(191, 193, 223);
+            display: inline-block;
+            padding: 8px 15px 8px 15px;
+            margin: 0 0px 0px 0;
+            border-radius: 10px 10px 0 0;
+        }
+        li.click{
+            background-color: rgb(142, 145, 178);
+        }
+        div.tab-panels{
+            height: 170px;
+        }
+        div.panels{
+            background-color: rgb(223, 224, 244);
+            padding: 20px 0 20px 30px;
+            border-radius: 0 0 10px 10px;
+        }
+        div ul{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab-panels">
+        <ul class="tabs">
+            <li rel="panel1" class="click">panel1</li>
+            <li rel="panel2">panel2</li>
+            <li rel="panel3">panel3</li>
+            <li rel="panel4">panel4</li>
+        </ul>
+        <div class="panels">
+            <div id="panel1" class="panelactive">
+                content1<br/>
+                content1<br/>
+                content1<br/>
+                content1<br/>
+                content1<br/>
+            </div>
+            <div id="panel2" class="panel">
+                content2<br/>
+                content2<br/>
+                content2<br/>
+                content2<br/>
+                content2<br/>
+            </div>
+            <div id="panel3" class="panel">
+                content3<br/>
+                content3<br/>
+                content3<br/>
+                content3<br/>
+                content3<br/>
+            </div>
+            <div id="panel4" class="panel">
+                content4<br/>
+                content4<br/>
+                content4<br/>
+                content4<br/>
+                content4<br/>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-panels">
+        <ul class="tabs">
+            <li rel="panel5" class="click">panel5</li>
+            <li rel="panel6">panel6</li>
+            <li rel="panel7">panel7</li>
+            <li rel="panel8">panel8</li>
+        </ul>
+        <div class="panels">
+            <div id="panel5" class="panelactive">
+                content5<br/>
+                content5<br/>
+                content5<br/>
+                content5<br/>
+                content5<br/>
+            </div>
+            <div id="panel6" class="panel">
+                content6<br/>
+                content6<br/>
+                content6<br/>
+                content6<br/>
+                content6<br/>
+            </div>
+            <div id="panel7" class="panel">
+                content7<br/>
+                content7<br/>
+                content7<br/>
+                content7<br/>
+                content7<br/>
+            </div>
+            <div id="panel8" class="panel">
+                content8<br/>
+                content8<br/>
+                content8<br/>
+                content8<br/>
+                content8<br/>
+            </div>
+        </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(function(){
+            $('.tab-panels .panel').slideUp(300);
+            $('.tab-panels .tabs li').on('click',function(){
+                var panel=$(this).closest('.tab-panels');
+                var paneltoshow=$(this).attr('rel');
+                panel.find('.tabs li.click').removeClass('click');
+                $(this).addClass('click');
+                panel.find('.panels .panelactive').slideUp(300,function(){
+                    $(this).removeClass('panelactive');
+                    $('#'+paneltoshow).slideDown(600,function(){
+                        $('#'+paneltoshow).addClass('panelactive');
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
