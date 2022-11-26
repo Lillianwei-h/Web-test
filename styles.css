@@ -21,7 +21,7 @@ header.sub{
     background-image: url("../tomomori2.png");
 }
 header.cover2{
-    background-image: url("cg3.jpg");
+    background-image: url("../cg3.jpg");
 }
 header.cover3{
     background-image: url("contact1.png");
@@ -34,7 +34,7 @@ header .logo a{
     position: relative;
     height:30px;
     width:30px;
-    background-position-y:10px;
+    background-position-y:-10px;
 }
 header.sub .logo a{
     background-image: url("../sakura.png");
@@ -44,7 +44,7 @@ header.sub .logo a{
     position: relative;
     height:30px;
     width:30px;
-    background-position-y:10px;
+    background-position-y:-10px;
 }
 header h3{
     font-size: 30px;
