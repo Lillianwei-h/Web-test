@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript taught by Tomomori</title>
+        <style>
+            body{
+                background:rgb(255, 255, 255);
+                color:rgb(141, 165, 187);
+                height: 1000px;
+                font-family:Helvetica Neue, Arial, Helvetica, sans-serif;
+            }
+            section{
+                background-color: rgb(175, 175, 211);
+                height: 150px;
+                padding: 30px 0 30px 20px;
+                margin: 0px 100px 0px 100px;
+            }
+            header{
+                background-color: rgb(175, 175, 211);
+                height: 400px;
+                padding: 30px 0 30px 20px;
+                margin: 0px 100px 0px 100px;
+            }
+            
+            main{
+                background-color: rgb(175, 175, 211);
+                height: 100px;
+                padding: 30px 0 30px 20px;
+                margin: 0px 100px 0px 100px;
+            }
+            
+            h1{
+                margin: 100px 0 0 0;
+                font-size: 60px;
+                text-align: center;
+                color:rgb(255, 255, 255);
+            }
+            h2,h4{
+                text-align: center;
+                color:rgb(255, 255, 255);
+            }
+            div{
+                background-color: rgb(175, 175, 211);
+                text-align: center;
+                margin: 10px 0 10px 0;
+            }
+            button{
+                background:rgb(228, 228, 250) ;
+                color:darkblue;
+                border-radius:5px;
+                border-color: cornflowerblue;
+            }
+            a{
+                color:darkblue;
+            }
+            ul,p{
+                color: aliceblue;
+                text-align: center;
+            }
+            li{
+                text-align: center;
+                list-style: none;
+                margin: 10px 0 10px -40px;
+            }
+            li.done{
+                color: rgb(228, 228, 228);
+                text-decoration: line-through;
+            }
+            .hide{
+                display: none;
+            }
+            li input{
+                display: none;
+            }
+            li span{
+                display: initial;
+            }
+            li.edit input{
+                display: initial;
+            }
+            li.edit span{
+                display: none;
+            }
+            /* * {
+                background: #000 !important;
+                color: #0f0 !important;
+                outline: solid #f00 1px !important;
+            } */
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>
+                Let's learn Javascript
+            </h1>
+            <h2>
+                First meet Taira no Tomomori!
+            </h2>
+            <div>
+                <button id="button">Hi I'm Tomomori</button>
+            </div>
+            <div>
+                <button data-fruit="apples" id="button1">done</button>
+            </div>
+            <div>
+                <button data-fruit="oranges" id="button2">done</button>
+            </div>
+            <div>
+                <button data-fruit="bananas" id="button3">done</button>
+            </div>
+            <div>
+                <button data-fruit="watermelons" id="button4">done</button>
+            </div>
+        </header>
+        <main id="main" class="hide">
+            <h4>Add your number:</h4>
+            <p>
+                <input id="num-one">+<input id="num-two">
+            </p>
+            <p id="add-sum"></p>
+        </main>
+
+        <section>
+             <ul id="checklist">
+                <li id="apples">
+                    <span>apples</span>
+                    <input value="apples"/>
+                </li>
+                <li id="oranges">
+                    <span>oranges</span>
+                    <input value="oranges"/>
+                </li>
+                <li id="bananas">
+                    <span>bananas</span>
+                    <input value="bananas"/>
+                </li>
+                <li id="watermelons">
+                    <span>watermelons</span>
+                    <input value="watermelons"/>
+                </li>
+             </ul>
+        </section>
+        <script src="scripts/main.js">
+        </script>
+    </body>
+
+</html>
