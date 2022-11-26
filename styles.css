@@ -38,13 +38,9 @@ header .logo a{
 }
 header.sub .logo a{
     background-image: url("../sakura.png");
-    display: inline-block;
-    background-size: 30px;
-    background-position-y:10px;
-    background-repeat: no-repeat;
-    position: relative;
-    height:30px;
-    width:30px;
+}
+header.cover2 .logo a{
+    background-image: url("../sakura.png");
 }
 header h3{
     font-size: 30px;
