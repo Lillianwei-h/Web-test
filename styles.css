@@ -30,21 +30,21 @@ header .logo a{
     background-image: url("sakura.png");
     display: inline-block;
     background-size: 30px;
+    background-position-y:-10px;
     background-repeat: no-repeat;
     position: relative;
     height:30px;
     width:30px;
-    background-position-y:-10px;
 }
 header.sub .logo a{
     background-image: url("../sakura.png");
     display: inline-block;
     background-size: 30px;
+    background-position-y:-10px;
     background-repeat: no-repeat;
     position: relative;
     height:30px;
     width:30px;
-    background-position-y:-10px;
 }
 header h3{
     font-size: 30px;
